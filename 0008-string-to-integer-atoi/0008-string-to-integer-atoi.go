@@ -1,5 +1,11 @@
 /*
-    handle whitespace 
+    the leading white space has to handle first,.
+    We only accpet value slices,[+,-,0,1,2,3,4,5,6,7,8,9]
+    use hashmap for fast check if it exist in the map.
+
+    where hashmap for sign store the + or - sign of number.
+
+    finally check overflow
 */
 import "strconv"
 func myAtoi(s string) int {
